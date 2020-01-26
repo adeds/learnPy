@@ -1,8 +1,10 @@
-def sum(arg1, arg2):
-    # Add both the parameters and return them.
-    total = arg1 + arg2
-    print('{} the function: {}'.format("inside",total))
-    return total
-# Panggil sum
-total = sum(10, 20);
-print('Outside the function: {}'.format(total))
+def changeme(gg, a=None):
+    if a is None:
+        a = [4]
+    a.append([1, 2, 3, 4])
+    print('{} di dalam fungsi: {}'.format(gg, a))
+
+
+mylist = [10, 20, 30]
+changeme('hwaaaa')
+print('Nilai di luar fungsi: {}'.format(mylist))
