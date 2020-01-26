@@ -1,4 +1,4 @@
-count = 0
-while count < 5:
+count = 5
+while count:
     print('The count is: {}'.format(count))
-    count = count + 1 #gada ++ yaa?
+    count = count - 1  # gada ++ yaa?
