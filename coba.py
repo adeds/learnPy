@@ -1,6 +1,8 @@
-z = 0
-try:
-    x = 1 / z
-    print(x)
-except ZeroDivisionError:
-    print('tidak bisa membagi angka dengan nilai nol')
+def sum(arg1, arg2):
+    # Add both the parameters and return them.
+    total = arg1 + arg2
+    print('{} the function: {}'.format("inside",total))
+    return total
+# Panggil sum
+total = sum(10, 20);
+print('Outside the function: {}'.format(total))
