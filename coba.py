@@ -1,15 +1,3 @@
-def printinfo(*args, **kwargs):
-    for a in args:
-        print('argumen posisi {}'.format(a))
-    for key, value in kwargs.items():
-        print('argument kata kunci {}:{}'.format(key, value))
-    else:
-        print("selesai\n")
+sum = lambda arg: arg[0] if len(arg)==1 else arg[-1]*sum(arg[0:-1])
 
-
-# Panggil printinfo
-printinfo()
-printinfo(1, 2, 3)
-printinfo(i=7, j=8, k=9)
-printinfo(1, 2, j=8, k=9)
-printinfo(*(2, 3), **{'i': 7, 'j': 8})
+print(sum((1, 2, 3, 4, 5, 6, 7)))
